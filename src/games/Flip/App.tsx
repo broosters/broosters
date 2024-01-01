@@ -75,10 +75,10 @@ export default function Flip() {
           ))}
         </GameUi.Select.Root>
         <GameUi.Button variant="primary" onClick={() => play(SIDES.Heads)}>
-          Heads
+          GOLD 
         </GameUi.Button>
         <GameUi.Button variant="primary" onClick={() => play(SIDES.Tails)}>
-          Tails
+          ZOMBIE
         </GameUi.Button>
       </GameUi.Controls>
       <Canvas
