@@ -76,10 +76,8 @@ function Mines() {
     setLoading(true)
     setSelected(cellIndex)
     try {
-      const res = await gamba.play({
-        bet,
-        wager: totalGain || config.wager,
-      })
+      const res = await gamba.play({ bet, wager, creatorFee: 0.05 })
+
 
       sounds.tick.play({ playbackRate: 1.5 })
 
