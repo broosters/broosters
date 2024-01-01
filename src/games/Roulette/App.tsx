@@ -52,10 +52,8 @@ export default function Roulette() {
   const play = async () => {
     try {
       setSpinning(true)
-      const res = await gamba.play({
-        bet,
-        wager,
-      })
+      const res = await gamba.play({ bet, wager, creatorFee: 0.05 })
+
       sounds.play.play()
       const result = await res.result()
       addResult(result.resultIndex)
