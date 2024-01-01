@@ -106,10 +106,8 @@ export default function Slots() {
       sounds.play.play()
       setSpinning(true)
 
-      const res = await gamba.play({
-        wager,
-        bet,
-      })
+      const res = await gamba.play({ bet, wager, creatorFee: 0.05 })
+
 
       setRevealedSlots(0)
       setGood(false)
