@@ -9,20 +9,20 @@ export function Home() {
     <div className={styles.banner}>
       <Section>
         <h2>
-          What is this?
+          Broosters POINTS (SEASON 1)
         </h2>
         <p style={{ wordWrap: 'break-word' }}>
-          An open source, decentralized casino built on Gamba. Copy this platform with your own branding and start earning fees on every bet.
+          Broosters Points is a reward system where the more you play, the more points you earn. Points is currently in beta and the leaderboard is not public. 
         </p>
         <div style={{ display: 'flex', gap: '10px' }}>
           <Button
             as="a"
             color="white"
-            href="https://gamba.so"
-            target="_blank"
+            href="https://www.broosters.xyz/flip"
+            target="_self"
             icon={<Icon.ExternalLink />}
           >
-            Learn more
+            EARN POINTS
           </Button>
         </div>
       </Section>
